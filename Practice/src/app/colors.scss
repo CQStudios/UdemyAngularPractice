@@ -1,0 +1,27 @@
+//make disabled buttons "fade"
+$buttonDisabledColorMultiplier: 0.3;
+$buttonOpacity: 1.0;
+
+$buttonHoverAdditive: rgba(100,50,0, $buttonOpacity);
+
+$buttonBGColor : rgba(120, 20, 10,$buttonOpacity);
+$buttonBorderColor: rgba(180,80,10,$buttonOpacity);
+$buttonForeColorLow: rgba(180,140,30,$buttonOpacity);
+$buttonForeColorHigh: rgba(255,220,140,$buttonOpacity);
+$buttonClickBorder: rgba(255, 180,0,$buttonOpacity);
+
+$buttonBGColorDisabled : rgba(120, 20, 10,$buttonOpacity*$buttonDisabledColorMultiplier);
+$buttonBorderColorDisabled: rgba(180,80,10,$buttonOpacity*$buttonDisabledColorMultiplier);
+$buttonForeColorLowDisabled: rgba(180,140,30,$buttonOpacity*$buttonDisabledColorMultiplier);
+$buttonForeColorHighDisabled: rgba(255,220,140,$buttonOpacity*$buttonDisabledColorMultiplier);
+
+$buttonBGColorHover : rgba(120, 20, 10,$buttonOpacity) + $buttonHoverAdditive;
+$buttonBorderColorHover: rgba(180,80,10,$buttonOpacity)  + $buttonHoverAdditive;
+$buttonForeColorLowHover: rgba(180,140,30,$buttonOpacity)  + $buttonHoverAdditive;
+$buttonForeColorHighHover: rgba(255,220,140,$buttonOpacity)  + $buttonHoverAdditive;
+
+
+$affirmativeBGDark : rgba(90,150,90,$buttonOpacity);
+$negativeBGDark : rgba(150,90,90,$buttonOpacity);
+
+$textForeColor: rgba(255,240,200,1);

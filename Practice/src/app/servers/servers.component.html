@@ -1,0 +1,20 @@
+<label>Server Name</label>
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="inputServerName">
+<button
+  class="btn btn-primary"
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer()"
+  >Add Server</button>
+<p *ngIf="serverCreated">Server {{serverName}} was created.</p>
+<app-server
+*ngFor="let S of servers"
+></app-server>
+
+
+<!--  api.fcctracker.com -->
+<!-- in the body of a post request, give a json object with the email: email, password: password
+we get a packet with an id, JWT, refresh token, etc -->
+<!--  REST api. -->
