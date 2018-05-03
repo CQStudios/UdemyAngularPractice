@@ -2,13 +2,13 @@
 <input
   type="text"
   class="form-control"
-  [(ngModel)]="inputServerName">
+  [(ngModel)]="serverName">
 <button
   class="btn btn-primary"
-  [disabled]="!allowNewServer"
+  [disabled]="serverName === ''"
   (click)="onCreateServer()"
-  >Add Server</button>
-<p *ngIf="serverCreated">Server {{serverName}} was created.</p>
+  >Add User</button>
+<p *ngIf="serverCreated">Server {{userName}} was created.</p>
 <app-server
 *ngFor="let S of servers"
 ></app-server>

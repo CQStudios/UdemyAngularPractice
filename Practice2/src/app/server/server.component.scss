@@ -1,0 +1,10 @@
+@import '../colors.scss';
+.online{
+  background-color: $affirmativeBGDark;
+  color: $textForeColor;
+}
+.offline{
+  background-color: $negativeBGDark;
+  color: $textForeColor;
+
+}

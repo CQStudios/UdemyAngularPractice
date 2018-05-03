@@ -32,4 +32,10 @@ export class ServersComponent implements OnInit {
     this.serverName = (<HTMLInputElement>event.target).value;
   }
 
+  log = [];
+  onToggle() {
+    this.log.push(new Date());
+    console.log(this.log);
+  }
+
 }

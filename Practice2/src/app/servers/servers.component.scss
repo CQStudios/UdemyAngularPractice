@@ -1,0 +1,20 @@
+@import '../colors.scss';
+button {
+  background-color: $buttonBGColor;
+  border-color: $buttonForeColorLow;
+  color: $buttonForeColorHigh;
+
+}
+button:disabled{
+  background-color: $buttonBGColorDisabled;
+  border-color: $buttonForeColorLowDisabled;
+  color: $buttonForeColorHighDisabled;
+}
+button:hover{
+  background-color: $buttonBGColorHover;
+  border-color: $buttonForeColorLowHover;
+  color: $buttonForeColorHighHover;
+}
+button:focus{
+  
+}
